@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Persona: Nicol Pirca </h1>
+	<h1>Persona: Abejita </h1>
 	<p>Usted ha seleccionado los siguientes servicios:</p>
 	
 	<%String services[]= request.getParameterValues("servicio");
