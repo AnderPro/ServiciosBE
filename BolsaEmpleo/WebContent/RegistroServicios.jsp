@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<%@page import="java.util.*"%>
+<!DOCTYPE html>
+
+<%
+String servicios[] = {"Abeja Bailarina","Mamarre, ya tu sabe","Mecanico","Artesano","Carpintero"};
+%>
+
+<% Vector serviciosAgregar = new Vector(); %>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registrar Servicios</title>
+</head>
+
+<body>
+
+<form name="AgregarServicios" onsubmit="checkBoxValidation()"  action="PersonaServicio.jsp"
+		method="post">
+		
+<label for="servicio"> Escoja los Servicios</label> 
+
+<% for (int i=0; i< servicios.length; i++) { %>
+	
+	<p><input type="checkbox" id="cbox1" name="servicio" value="<%=servicios[i]%>"><%= servicios[i] %></p>
+	
+<%} %>
+
+	<div>
+	<input class="btn btn-primary" type="submit" value="Enviar">
+	</div>
+
+</form>
+ <%String services[]= request.getParameterValues("servicio");
+        if(services != null){%>
+        <h4>Servicios seleccionados:</h4>
+        <ul><%for(int i=0; i<services.length; i++){%>
+            <li><%=services[i]%></li><%}%>
+        </ul><%}%>
+
+</body>
+</html>

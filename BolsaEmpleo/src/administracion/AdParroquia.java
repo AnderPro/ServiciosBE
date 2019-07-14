@@ -6,6 +6,7 @@ import java.util.Vector;
 
 import bdd.BDD;
 
+
 public class AdParroquia {
 	int idParroquia;
 	String nombreParroquia;

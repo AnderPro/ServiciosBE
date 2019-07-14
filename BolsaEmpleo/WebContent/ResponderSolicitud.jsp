@@ -5,6 +5,7 @@
 <% 
 String servicio = request.getParameter("servicio") !=null ? request.getParameter("servicio") :"0";
 String nombreServicio= ControladorAdm.verServicio(servicio);
+
 %>
 <html>
 <head>
@@ -12,6 +13,7 @@ String nombreServicio= ControladorAdm.verServicio(servicio);
 <title>EjemploB</title>
 </head>
 <body>
+	<h1>AQUI se va a mostrar los artesanos dado un servicio</h1>
 	<h1>
 	<%if(servicio.equals("0")){ %>
 		No ha seleccionado nada

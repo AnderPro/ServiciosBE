@@ -1,25 +1,20 @@
 <%@page import="administracion.ControladorAdm"%>
-
+<%@page import="java.util.ArrayList"%>
 <%@page import="java.util.*"%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 
+<% String servicios[] = {"Mecanico","Artesano","Carpintero"};
+%>
+
 <html>
 <head>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
-	type="text/css">
-<link href="bootstrap/css/estilo.css" rel="stylesheet" type="text/css">
-
 <meta charset="ISO-8859-1">
 <title>LISTAR SERVICIOS</title>
 </head>
 <body>
-
-	<%
-		ArrayList servicios = ControladorAdm.listarServicios();
-	%>
 
 	<form name="formaServicio" action="ResponderSolicitud.jsp"
 		method="post">
@@ -36,22 +31,22 @@
 
 			<div id="cuerpo" class="col-sm-9">
 				<label for="servicio"> Escoja un Servicio</label> <select
-					class="custom-select" name="servicio" id="servicio">
+					 name="servicio" id="servicio">
 					<option value="0">Escoga una Opción</option>
 					<%
-						for (int i = 0; i < servicios.size(); i++) {
-							Vector servicio = (Vector) servicios.get(i);
-							String idServicio = servicio.get(0).toString().trim();
-							String nombreServicio = servicio.get(1).toString().trim();
+						for (int i = 0; i < servicios.length; i++) {
+							String idservicio = Integer.toString(i+1);
+							String nombreServicio = servicios[i];
+						//String nombreServicio = servicios.
 					%>
-					<option value="<%=idServicio%>"><%=nombreServicio%>
+					<option value="<%=idservicio%>"><%=nombreServicio%>
 					</option>
 					<%
 						}
 					%>
 				</select> <br> <br>
 				<div>
-					<input class="btn btn-primary" type="submit" value="Enviar">
+					<input type="submit" value="Enviar">
 
 				</div>
 			</div>
@@ -74,8 +69,8 @@
 	<form>
   <div class="form-group">
     <label for="busquedaArtesano">Apellidos del artesano:</label>
-    <input type="apellidos" class="form-control" id="busquedaArtesano" aria-describedby="busquedaArtesano" placeholder="Enter apellido">
-    <small id="apellidos" class="form-text text-muted">Ingrese los dos apellidos</small>
+    <input type="apellidos"  id="busquedaArtesano" aria-describedby="busquedaArtesano" placeholder="Enter apellido">
+    <small id="apellidos" >Ingrese los dos apellidos</small>
   </div>
 
 </body>

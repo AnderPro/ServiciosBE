@@ -22,7 +22,7 @@
 			<div class="col-sm-9">
 				<label for="parroquia"> Escoja una parroquia</label> 
 				<select name="parroquia" id="parroquia" >
-				<option value="0">Escoga una Opción</option>
+				<option value="0">Escoja una Opción</option>
 				<%
 					for (int i = 0; i< parroquias.size(); i++){
 						Vector parroquia = (Vector)parroquias.get(i);
