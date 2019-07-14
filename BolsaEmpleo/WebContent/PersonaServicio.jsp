@@ -6,9 +6,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Persona Servicio</title>
 </head>
 <body>
+
+<div class="menu">
+			<a href="RegistroServicios.jsp"> <img src="images/logo2.png">
+			</a>
+			Regresar a Seleccionar Servicios
+		</div>
+
 	<h1>Persona: Abejita </h1>
 	<p>Usted ha seleccionado los siguientes servicios:</p>
 	
