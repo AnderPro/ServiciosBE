@@ -5,16 +5,20 @@
 
 <html>
 <head>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
+	type="text/css">
+<link href="bootstrap/css/estilo.css" rel="stylesheet" type="text/css">
+
 <meta charset="ISO-8859-1">
 <title>Persona Servicio</title>
 </head>
 <body>
 
-<div class="menu">
+<header class="menu">
 			<a href="RegistroServicios.jsp"> <img src="images/logo2.png">
 			</a>
 			Regresar a Seleccionar Servicios
-		</div>
+</header>
 
 	<h1>Persona: Abejita </h1>
 	<p>Usted ha seleccionado los siguientes servicios:</p>

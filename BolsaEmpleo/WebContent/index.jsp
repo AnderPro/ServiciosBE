@@ -13,6 +13,10 @@
 <p>	
 <li><a href="RegistroServicios.jsp"> Registro Servicios</a></li>
 </p>
+
+<p>	
+<li><a href="Auditoria.jsp">Ver tabla Auditoria</a></li>
+</p>
 </bodY>
 <h1> HOLA PANTALLA PRINCIPAL </h1>
 </html>

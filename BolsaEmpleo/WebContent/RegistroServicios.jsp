@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 
 <%
-	String servicios[] = { "Abeja Bailarina", "Mamarre, ya tu sabe", "Mecanico", "Artesano", "Carpintero" };
+	String servicios[] = { "Pintor", "Albañil", "Mecanico", "Artesano", "Carpintero" };
 %>
 
 <html>
@@ -21,6 +21,7 @@
 
 	<header class="menu">
 		 <img src="images/logo2.png">
+		 <a href="index.jsp">Regresar</a>
 		
 	</header>
 

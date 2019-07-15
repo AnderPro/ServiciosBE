@@ -23,12 +23,20 @@
 }
 
 .menu{
-	
+
 	padding-left: 100px;
     padding-right: 50px;
-    background-color: #563d7c;
-    box-shadow: 
+    background-color: black;
+   	color:#fff;
 	
+}
+
+.table {
+	
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
 }
 
 .custom-select {
