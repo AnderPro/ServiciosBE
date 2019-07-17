@@ -32,9 +32,10 @@
 				%>
 				<option value="<%=idParroquia%>"><%=nombreParroquia%>
 				</option>
+					
 				<%
 					}
-				%>
+				%>						
 				</select>
 				</div>
 			</div>
@@ -43,6 +44,23 @@
 			<input type="submit" value="Enviar" >
 			</div>
 	</form>			
+			
+				<table>
+				<%
+					for (int i = 0; i< parroquias.size(); i++){
+						Vector parroquia = (Vector)parroquias.get(i);
+						String idParroquia = parroquia.get(0).toString().trim();
+						String nombreParroquia= parroquia.get(1).toString().trim();
+						String idCanton = parroquia.get(2).toString().trim();
+				%>
+					<tr>
+						<th><%= idParroquia%></th>
+						
+						<th><%= nombreParroquia%></th>
+					</tr>
+				<%}%>
+				</table>
+			
 			
 </body>
 </html>

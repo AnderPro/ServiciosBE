@@ -18,6 +18,16 @@ public class ControladorAdm {
 		return parroquias;
 	}
 	
+	public static ArrayList listarServiciosPersona() throws Exception{
+		//metodo que devuelve los servicios dado una persona
+		ArrayList serviciosDePersona = Adm.listarServiciosPersona("1");
+		Vector servicios2 = (Vector)serviciosDePersona.get(0);
+		if(servicios2.get(0).toString().trim().equals("vacio")) {
+			Vector servicios3 = new Vector();
+			}
+		return serviciosDePersona;
+	}
+	
 	public static ArrayList listarServicios() throws Exception {
 		ArrayList servicios = Adm.listarServicio();
 		Vector servicios2 = (Vector)servicios.get(0);

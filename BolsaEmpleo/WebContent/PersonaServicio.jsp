@@ -30,12 +30,15 @@
 	<ul>
 		<%for(int i=0; i<services.length; i++){%>
 		<li><%=services[i]%></li>
+		<% %>
 		<%}%>
 		
 	</ul>
 	<%}else{%>
 		no has seleccionado nada
 	<%} %>
+	
+
 
 </body>
 </html>

@@ -11,7 +11,7 @@
 </p>
 
 <p>	
-<li><a href="RegistroServicios.jsp"> Registro Servicios</a></li>
+<li><a href="RegistroServicio2.jsp"> Registro Servicios</a></li>
 </p>
 
 <p>	
