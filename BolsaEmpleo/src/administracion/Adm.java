@@ -56,14 +56,15 @@ public class Adm {
 		
 		return servicio;
 	}
-	
-	public static void registrarServicioArtesano( String idServicio, String codPer, String estado) {
+	/*-----------------------------------------------------------*/
+	public static void registrarServicioArtesano( String idServicio, String codPer, String estado) throws Exception{
 		String sql = "INSERT INTO personaservicio (idServicio,CODIGOPERSONA,estado)VALUES ("
 				+ idServicio+","
 						+ codPer+","
-								+ estado+")";	
+								+ estado+")";
+		BDD.instruccion(sql);
 	}
-	
+	/*-----------------------------------------------------------*/
 	public static ArrayList listarServiciosPersona(String codigoPersona) throws Exception {
 		ArrayList servicio = new ArrayList();
 		String sentencia = "SELECT IDSERVICIO, NOMBRESERVICIO "

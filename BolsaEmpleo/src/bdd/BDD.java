@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 
@@ -47,6 +48,17 @@ public class BDD {
 			return null;
 		}
 	}
+	/* ----------------------------------------------------------*/
+	public static void instruccion(String sql) throws Exception{
+        	Connection con = con();
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.executeUpdate();
+            //pst = con.prepareStatement("commit");
+            //pst.executeUpdate();
+            con.close();
+    }
+	/* ----------------------------------------------------------*/
+	
 	public static ResultSet consultar(String consulta) throws Exception{
 		Statement statement = st();
 		ResultSet resultado = statement.executeQuery(consulta);
@@ -194,6 +206,8 @@ public class BDD {
 	public String getErrorGeneral() {
 		return errorGeneral;
 	}	
+	
+	
 	
 }
 

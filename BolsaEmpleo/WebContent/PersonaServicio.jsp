@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@page import="administracion.Adm" %>
+	
 <!DOCTYPE html>
 
 
@@ -30,9 +32,10 @@
 	<ul>
 		<%for(int i=0; i<services.length; i++){%>
 		<li><%=services[i]%></li>
-		<% %>
 		<%}%>
-		
+		<p>AQUI DEBO ENVIAR TODOS LOS SERVICIOS ,
+		O LLAMAR A UN METODO ME TRAIGA EL CODIGO PERSONA ETC ETC</p>
+		<% %>  
 	</ul>
 	<%}else{%>
 		no has seleccionado nada
