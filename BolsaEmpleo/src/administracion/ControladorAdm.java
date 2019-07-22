@@ -29,7 +29,8 @@ public class ControladorAdm {
 	}
 	
 	public static ArrayList listarServicios() throws Exception {
-		ArrayList servicios = Adm.listarServicio();
+		//Metodo que devuekve los servicios dado un idCatlogo
+		ArrayList servicios = Adm.listarServicio("1");
 		Vector servicios2 = (Vector)servicios.get(0);
 		if(servicios2.get(0).toString().trim().equals("vacio")) {
 			Vector servicios3 = new Vector();
@@ -57,6 +58,16 @@ public class ControladorAdm {
 		}
 		
 		return nombreParroquia;
+	}
+	
+	public static String verCatalogo(String idCatalogo) throws Exception{
+		System.out.println("ID de l catalogo:"+idCatalogo);		
+		String nombreCatalogo = "";
+		if(!idCatalogo.equals("0")) {
+			AdCatalogo.nombreCatalogo(idCatalogo);
+		}
+		
+		return nombreCatalogo;
 	}
 	
 	public static String verServicio(String idServicio) throws Exception{

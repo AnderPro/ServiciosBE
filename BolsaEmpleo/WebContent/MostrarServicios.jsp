@@ -14,10 +14,18 @@
 
 // AQUI me falta crear el  etodo verCatalogo
 String catalogo = request.getParameter("catalogo") !=null ? request.getParameter("catalogo") :"0";
-String nombreCatalogo= ControladorAdm.;
+String nombreCatalogo= ControladorAdm.verCatalogo(catalogo);
 %>
 
 <h1> Hola Aqui voy a mostrar los servicios dado un catalogo</h1>
+
+<%if(catalogo.equals("0")){ %>
+		No ha seleccionado nada
+	<%}else{ %>
+		<%= nombreCatalogo %>
+		
+		
+	<%}%>
 
 </body>
 </html>

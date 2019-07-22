@@ -32,10 +32,10 @@ public class Adm {
 		return parroquia;
 	}
 	
-	public static ArrayList listarServicio() throws Exception {
+	public static ArrayList listarServicio(String idCatalogo) throws Exception {
 		ArrayList servicio = new ArrayList();
 		String sentencia = "SELECT IDSERVICIO, NOMBRESERVICIO "
-				+ "FROM servicio s, adcatalogo a  WHERE s. =   ORDER BY NOMBRESERVICIO ";
+				+ "FROM servicio WHERE idCatalogo="+ idCatalogo +" ORDER BY NOMBRESERVICIO ";
 		
 		ArrayList servicios1 = BDD.consultar1(sentencia);
 		if(!servicios1.isEmpty()) {

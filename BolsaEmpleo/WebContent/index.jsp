@@ -6,6 +6,10 @@
 
 </head>
 <bodY>
+<p>	
+<li><a href="MostrarCatalogo.jsp">CATALOGOS</a></li>
+</p>
+
 <p >	
 <li><a href="Servicios.jsp"> Consultas de Servicios</a></li>
 </p>
