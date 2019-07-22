@@ -43,7 +43,7 @@ public class AdServicio {
 	
 	public  static String nombreServicio(String idServicio) throws Exception {
 		String nombreServicio= "";
-		String nombre = "Select NOMBRESERVICIO FROM servicio WHERE IDSERVICIO = "+idServicio;
+		String nombre = "Select nombreServicio FROM servicio WHERE IDSERVICIO = "+idServicio;
 		ArrayList nombres = BDD.consultar1(nombre);
 		Vector v = (Vector)nombres.get(0);
 		
@@ -53,7 +53,7 @@ public class AdServicio {
 	
 		nombreServicio = v.get(0).toString().trim();
 		}
-		
+		System.out.println("vengo de la clase AdServicio "+nombreServicio);
 		return nombreServicio;
 	}
 	

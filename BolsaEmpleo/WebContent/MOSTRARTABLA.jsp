@@ -21,11 +21,13 @@
 					Vector servicio = (Vector) servicios.get(i);
 					String idServicio = servicio.get(0).toString().trim();
 					String nombreServicio = servicio.get(1).toString().trim();
-					out.println(idServicio + nombreServicio);
+					//out.println(idServicio + nombreServicio);
 			%>
 			<tr>
 				<th><%=idServicio%></th>
 				<th><%=nombreServicio%></th>
+				
+				
 			</tr>
 			<%}%>
 

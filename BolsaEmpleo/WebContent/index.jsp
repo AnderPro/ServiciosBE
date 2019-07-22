@@ -18,5 +18,5 @@
 <li><a href="Auditoria.jsp">Ver tabla Auditoria</a></li>
 </p>
 </bodY>
-<h1> HOLA PANTALLA PRINCIPAL </h1>
+<h1>... HOLA PANTALLA PRINCIPAL ...</h1>
 </html>

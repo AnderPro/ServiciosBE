@@ -29,7 +29,7 @@
 		%>
 		<p>
 			<input type="checkbox" id="cbox1" name="servicio"
-				value="<%=nombreServicio%>"><%=nombreServicio%></p>
+				value="<%=idServicio%>"><%=nombreServicio%></p>
 		<%}%>
 
 		<div>

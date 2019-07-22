@@ -16,7 +16,7 @@ String nombreParroquia= ControladorAdm.verParroquia(parroquia);
 	<%if(parroquia.equals("0")){ %>
 		No ha seleccionado nada
 	<%}else{ %>
-		<%= parroquia %>
+		<%= nombreParroquia %>
 		
 		
 	<%}%>
