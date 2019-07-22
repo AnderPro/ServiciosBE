@@ -37,6 +37,18 @@ public class ControladorAdm {
 		return servicios;
 	}
 	
+	public static ArrayList listarCatalogos() throws Exception {
+		ArrayList catalogos = Adm.listarCatalogo();
+		Vector catalogos2 = (Vector)catalogos.get(0);
+		if(catalogos2.get(0).toString().trim().equals("vacio")) {
+			Vector catalogos3 = new Vector();
+			}
+		return catalogos;
+	}
+	
+	
+	
+	
 	public static String verParroquia(String idParroquia) throws Exception{
 		System.out.println("ID de la parroquia:"+idParroquia);		
 		String nombreParroquia = "";

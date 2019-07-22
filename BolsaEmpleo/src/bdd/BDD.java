@@ -67,7 +67,6 @@ public class BDD {
 	
 	public static  ArrayList consultar1(String sentencia) throws Exception {
 		ArrayList cifras = new ArrayList();
-		
 		Statement p = st();
 		ResultSet rs = p.executeQuery(sentencia);
 		ResultSetMetaData rsmd = rs.getMetaData();

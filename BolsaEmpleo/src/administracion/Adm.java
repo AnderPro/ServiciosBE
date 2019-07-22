@@ -35,7 +35,7 @@ public class Adm {
 	public static ArrayList listarServicio() throws Exception {
 		ArrayList servicio = new ArrayList();
 		String sentencia = "SELECT IDSERVICIO, NOMBRESERVICIO "
-				+ "FROM servicio ORDER BY NOMBRESERVICIO";
+				+ "FROM servicio s, adcatalogo a  WHERE s. =   ORDER BY NOMBRESERVICIO ";
 		
 		ArrayList servicios1 = BDD.consultar1(sentencia);
 		if(!servicios1.isEmpty()) {
@@ -65,6 +65,36 @@ public class Adm {
 		BDD.instruccion(sql);
 	}
 	/*-----------------------------------------------------------*/
+	
+	public static ArrayList listarCatalogo() throws Exception {
+		ArrayList catalogo = new ArrayList();
+		String sentencia = "SELECT idCatalogo,catalogo "
+				+ "FROM   adcatalogo ORDER BY catalogo ";
+		
+		ArrayList catalogos1 = BDD.consultar1(sentencia);
+		if(!catalogos1.isEmpty()) {
+			Vector catalogos2 = (Vector)catalogos1.get(0);
+			if(!catalogos2.isEmpty()) {
+				String catalogos3 = catalogos2.get(0).toString().trim();
+				if(!catalogos3.isEmpty()) {
+					catalogo = catalogos1;
+				}
+			}
+		}
+		if (catalogo.isEmpty()) {
+			Vector vacios = new Vector();
+			vacios.add("vacio");
+			vacios.add("EL catalogo  NO EXISTE");
+			catalogo.add(vacios);
+		}
+		
+		return catalogo;
+	}
+	
+	
+	
+	
+	
 	public static ArrayList listarServiciosPersona(String codigoPersona) throws Exception {
 		ArrayList servicio = new ArrayList();
 		String sentencia = "SELECT IDSERVICIO, NOMBRESERVICIO "
