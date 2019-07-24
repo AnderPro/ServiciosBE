@@ -79,7 +79,7 @@ public class BDD {
 	        } 
 			cifras.add(cifras2);
 		}      
-		System.out.println(cifras);
+		System.out.println("BDD"+cifras);
 		return cifras;
 		
 	}

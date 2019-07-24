@@ -7,12 +7,10 @@
 
 
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Mostrar Servicios</title>
 </head>
 <body>
 <% 
-
-// AQUI me falta crear el  etodo verCatalogo
 String catalogo = request.getParameter("catalogo") !=null ? request.getParameter("catalogo") :"0";
 String nombreCatalogo= ControladorAdm.verCatalogo(catalogo);
 %>
@@ -22,9 +20,7 @@ String nombreCatalogo= ControladorAdm.verCatalogo(catalogo);
 <%if(catalogo.equals("0")){ %>
 		No ha seleccionado nada
 	<%}else{ %>
-		<%= nombreCatalogo %>
-		
-		
+		<%= nombreCatalogo %> 
 	<%}%>
 
 </body>

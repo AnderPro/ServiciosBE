@@ -69,7 +69,7 @@ public class Adm {
 	public static ArrayList listarCatalogo() throws Exception {
 		ArrayList catalogo = new ArrayList();
 		String sentencia = "SELECT idCatalogo,catalogo "
-				+ "FROM   adcatalogo ORDER BY catalogo ";
+				+ "FROM   adcatalogo where idTipoCatalogo = 4 ORDER BY catalogo ";
 		
 		ArrayList catalogos1 = BDD.consultar1(sentencia);
 		if(!catalogos1.isEmpty()) {

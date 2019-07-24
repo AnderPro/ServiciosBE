@@ -61,10 +61,10 @@ public class ControladorAdm {
 	}
 	
 	public static String verCatalogo(String idCatalogo) throws Exception{
-		System.out.println("ID de l catalogo:"+idCatalogo);		
+		System.out.println("ID del catalogo:"+ idCatalogo);		
 		String nombreCatalogo = "";
 		if(!idCatalogo.equals("0")) {
-			AdCatalogo.nombreCatalogo(idCatalogo);
+			nombreCatalogo=AdCatalogo.nombreCatalogo(idCatalogo);
 		}
 		
 		return nombreCatalogo;
