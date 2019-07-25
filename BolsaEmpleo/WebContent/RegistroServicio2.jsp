@@ -35,7 +35,7 @@
 		}
 	%>
 
-
+	
 
 	<form name="MostrarServicios" onsubmit="checkBoxValidation()"
 		action="PersonaServicio.jsp" method="post">

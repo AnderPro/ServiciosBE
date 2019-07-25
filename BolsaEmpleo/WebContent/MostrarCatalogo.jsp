@@ -43,7 +43,7 @@
 			<input type="submit" value="Enviar">
 		</div>
 	</form>
-
+	<!--  
 	<table>
 		<%
 			for (int i = 0; i < catalogos.size(); i++) {
@@ -61,6 +61,6 @@
 		%>
 	</table>
 
-
+-->
 </body>
 </html>

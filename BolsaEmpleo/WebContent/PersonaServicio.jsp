@@ -11,7 +11,6 @@
 <link href="bootstrap/css/estilo.css" rel="stylesheet" type="text/css">
 
 
-
 <meta charset="ISO-8859-1">
 <title>Servicios Registrados</title>
 </head>
@@ -20,7 +19,7 @@
 		String codigPersona = "1";
 	%>
 	<header class="menu">
-		<a href="RegistroServicios.jsp"> <img src="images/logo2.png">
+		<a href="RegistroServicio2.jsp"> <img src="images/logo2.png">
 		</a> Regresar a Seleccionar Servicios
 	</header>
 

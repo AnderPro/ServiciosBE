@@ -29,7 +29,7 @@ public class ControladorAdm {
 	}
 	
 	public static ArrayList listarServicios(String idtiposervicio) throws Exception {
-		//Metodo que devuekve los servicios dado un idCatlogo
+
 		ArrayList servicios = Adm.listarServicio(idtiposervicio);
 		Vector servicios2 = (Vector)servicios.get(0);
 		if(servicios2.get(0).toString().trim().equals("vacio")) {
