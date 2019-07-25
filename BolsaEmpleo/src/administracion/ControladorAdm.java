@@ -28,9 +28,9 @@ public class ControladorAdm {
 		return serviciosDePersona;
 	}
 	
-	public static ArrayList listarServicios() throws Exception {
+	public static ArrayList listarServicios(String idtiposervicio) throws Exception {
 		//Metodo que devuekve los servicios dado un idCatlogo
-		ArrayList servicios = Adm.listarServicio("1");
+		ArrayList servicios = Adm.listarServicio(idtiposervicio);
 		Vector servicios2 = (Vector)servicios.get(0);
 		if(servicios2.get(0).toString().trim().equals("vacio")) {
 			Vector servicios3 = new Vector();
@@ -75,7 +75,7 @@ public class ControladorAdm {
 		
 		String nombreServicio = "";
 		if(!idServicio.equals("0")) {
-			AdServicio.nombreServicio(idServicio);
+			nombreServicio=AdServicio.nombreServicio(idServicio);
 		}
 		return nombreServicio;
 	}
