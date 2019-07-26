@@ -91,36 +91,5 @@ public class Adm {
 		return catalogo;
 	}
 	
-	
-	
-	
-	
-	public static ArrayList listarServiciosPersona(String codigoPersona) throws Exception {
-		ArrayList servicio = new ArrayList();
-		String sentencia = "SELECT IDSERVICIO, NOMBRESERVICIO "
-				+ "FROM servicio ORDER BY NOMBRESERVICIO"
-				+ "where CODIGOPERSONA = "+codigoPersona;
 		
-		ArrayList servicios1 = BDD.consultar1(sentencia);
-		if(!servicios1.isEmpty()) {
-			Vector servicios2 = (Vector)servicios1.get(0);
-			if(!servicios2.isEmpty()) {
-				String servicios3 = servicios2.get(0).toString().trim();
-				if(!servicios3.isEmpty()) {
-					servicio = servicios1;
-				}
-			}
-		}
-		if (servicio.isEmpty()) {
-			Vector vacios = new Vector();
-			vacios.add("vacio");
-			vacios.add("La persona "+codigoPersona+ " NO TIENE SERVICIOS");
-			servicio.add(vacios);
-		}
-		
-		return servicio;
-	}
-	
-	
-	
 }
